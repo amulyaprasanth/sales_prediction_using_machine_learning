@@ -5,5 +5,4 @@ scikit-learn
 seaborn
 xgboost 
 catboost
-jupyter
-# -e .
+-e .
