@@ -87,18 +87,17 @@ class ModelTrainer:
             }
 
             logging.info("Training models....")
-            best_model, model_report = evaluate_models(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
+            model_report = evaluate_models(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
                                                               models=models, params=params)
 
             # get the best model
-            # logging.info("Getting the best model")
-            # best_model_score = min(sorted(model_report.values()))
-            # best_model_name = list(model_report.keys())[
-            #     list(model_report.values()).index(best_model_score)
-            # ]
+            logging.info("Getting the best model")
+            best_model_score = min(sorted(model_report.values()))
+            best_model_name = list(model_report.keys())[
+                list(model_report.values()).index(best_model_score)
+            ]
 
-            # best_model = models[best_model_name].set_params(
-            #     **best_model_params)
+            best_model = models[best_model_name]
 
             logging.info(
                 f"Best found model on both training and testing dataset: {best_model}")

@@ -62,10 +62,7 @@ def evaluate_models(X_train, y_train, X_test, y_test, models, params):
 
             report[list(models.keys())[i]] = test_rmse
 
-        return (
-            model,
-            report
-        )
+        return report
 
     except Exception as e:
         raise CustomException(e, sys)
