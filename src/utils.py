@@ -23,7 +23,7 @@ def save_object(file_path, obj):
 def load_object(file_path):
     try:
         with open(file_path, "rb") as f:
-            return pickle.load(file_path)
+            return pickle.load(f)
 
     except Exception as e:
         raise CustomException(e, sys)
@@ -66,3 +66,5 @@ def evaluate_models(X_train, y_train, X_test, y_test, models, params):
 
     except Exception as e:
         raise CustomException(e, sys)
+
+
