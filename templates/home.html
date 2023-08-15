@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Information Form</title>
+</head>
+<body>
+    <h1>Game Information Form</h1>
+    <form action="{{url_for('predict_datapoint')}}" method="post">
+        <label for="console">Console:</label>
+        <select id="console" name="console">
+            <option value="ds">Nintendo DS</option>
+            <option value="pc">PC</option>
+            <option value="ps2">PlayStation 2</option>
+            <option value="ps3">PlayStation 3</option>
+            <option value="psp">PlayStation Portable</option>
+            <option value="wii">Nintendo Wii</option>
+            <option value="psv">PlayStation Vita</option>
+            <option value="gba">Game Boy Advance</option>
+            <option value="x360">Xbox 360</option>
+            <option value="gc">GameCube</option>
+            <option value="ps">PlayStation</option>
+            <option value="x">Xbox</option>
+            <option value="wiiu">Nintendo Wii U (WiiU)</option>
+            <option value="xone">Xbox One</option>
+            <option value="ps4">PlayStation 4</option>
+            <option value="3ds">Nintendo 3DS</option>
+            <option value="dc">Dreamcast</option>
+            <!-- Add other console values here -->
+        </select><br><br>
+        
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="role-playing">Role-Playing</option>
+            <option value="shooter">Shooter</option>
+            <option value="sports">Sports</option>
+            <option value="action">Action</option>
+            <option value="strategy">Strategy</option>
+            <option value="racing">Racing</option>
+            <option value="simulation">Simulation</option>
+            <option value="adventure">Adventure</option>
+            <option value="platform">Platform</option>
+            <option value="fighting">Fighting</option>
+            <option value="puzzle">Puzzle</option>
+            <option value="misc">Miscalleneous</option>
+            <!-- Add other category values here -->
+        </select><br><br>
+        
+        <label for="publisher">Publisher:</label>
+        <select id="publisher" name="publisher">
+            <option value="Electronic Arts">Electronic Arts</option>
+            <option value="Activision">Activision</option>
+            <option value="Ubisoft">Ubisoft</option>
+            <option value="Nintendo">Nintendo</option>
+            <option value="Thq">Thq</option>
+            <option value="Sony Computer Entertainment">Sony Computer Entertainment</option>
+            <option value="Take-Two Interactive">Take-Two Interactive</option>
+            <option value="Sega">Sega</option>
+            <option value="Namco Bandai Games">Namco Bandai Games</option>
+            <option value="Konami Digital Entertainment">Konami Digital Entertainment</option>
+            <option value="Microsoft Game Studios">Microsoft Game Studios</option>
+            <option value="Warner Bros. Interactive Entertainment">Warner Bros. Interactive Entertainment</option>
+            <option value="Atari">Atari</option>
+            <option value="Capcom">Capcom</option>
+            <option value="Square Enix">Square Enix</option>
+            <option value="Tecmo Koei">Tecmo Koei</option>
+            <option value="Vivendi Games">Vivendi Games</option>
+            <option value="Eidos Interactive">Eidos Interactive</option>
+            <option value="Midway Games">Midway Games</option>
+            <option value="Codemasters">Codemasters</option>
+            <option value="Lucasarts">Lucasarts</option>
+            <option value="Disney Interactive Studios">Disney Interactive Studios</option>
+            <option value="505 Games">505 Games</option>
+            <option value="Deep Silver">Deep Silver</option>
+            <option value="Nippon Ichi Software">Nippon Ichi Software</option>
+            <option value="Rising Star Games">Rising Star Games</option>
+            <option value="Bethesda Softworks">Bethesda Softworks</option>
+            <option value="Acclaim Entertainment">Acclaim Entertainment</option>
+            <option value="Atlus">Atlus</option>
+            <option value="Majesco Entertainment">Majesco Entertainment</option>
+            <option value="Zoo Digital Publishing">Zoo Digital Publishing</option>
+            <option value="Southpeak Games">Southpeak Games</option>
+            <option value="Kalypso Media">Kalypso Media</option>
+            <option value="Ignition Entertainment">Ignition Entertainment</option>
+            <option value="Tdk Mediactive">Tdk Mediactive</option>
+            <option value="Global Star">Global Star</option>
+            <option value="Infogrames">Infogrames</option>
+            <option value="Focus Home Interactive">Focus Home Interactive</option>
+            <option value="Empire Interactive">Empire Interactive</option>
+            <option value="Paradox Interactive">Paradox Interactive</option>
+            <option value="Mtv Games">Mtv Games</option>
+            <option value="D3Publisher">D3Publisher</option>
+            <option value="Universal Interactive">Universal Interactive</option>
+            <option value="Pqube">Pqube</option>
+            <option value="Ubisoft Annecy">Ubisoft Annecy</option>
+            <option value="3Do">3Do</option>
+            <option value="Virgin Interactive">Virgin Interactive</option>
+            <option value="Sci">Sci</option>
+            <option value="Dtp Entertainment">Dtp Entertainment</option>
+            <option value="Nordic Games">Nordic Games</option>
+            <option value="Sony Computer Entertainment Europe">Sony Computer Entertainment Europe</option>
+            <option value="Ghostlight">Ghostlight</option>
+            <option value="Squaresoft">Squaresoft</option>
+            <option value="Jowood Productions">Jowood Productions</option>
+            <option value="Takara Tomy">Takara Tomy</option>
+            <option value="Crave Entertainment">Crave Entertainment</option>
+            <option value="Unknown">Unknown</option>
+            <option value="Telltale Games">Telltale Games</option>
+            <option value="Idea Factory">Idea Factory</option>
+            <option value="City Interactive">City Interactive</option>
+            <option value="Jaleco">Jaleco</option>
+            <option value="Destineer">Destineer</option>
+            <option value="Sting">Sting</option>
+            <option value="Koch Media">Koch Media</option>
+            <option value="Mc2 Entertainment">Mc2 Entertainment</option>
+            <option value="Spike">Spike</option>
+            <option value="Gungho">Gungho</option>
+            <option value="Aksys Games">Aksys Games</option>
+            <option value="Bam! Entertainment">Bam! Entertainment</option>
+            <option value="Popcap Games">Popcap Games</option>
+            <option value="Marvelous Entertainment">Marvelous Entertainment</option>
+            <option value="Ncsoft">Ncsoft</option>
+            <option value="Metro 3D">Metro 3D</option>
+            <option value="Compile Heart">Compile Heart</option>
+        </select><br><br>
+        
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating">
+            <option value="E">Everyone</option>
+            <option value="M">Mature</option>
+            <option value="T">Teen</option>
+            <option value="E10+">Everyone 10+</option>
+            <option value="K-A">Kids to Adults</option>
+            <option value="RP">Rating Pending</option>
+            <!-- Add other rating values here -->
+        </select><br><br>
+        
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id"><br><br>
+        
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" min="1997"><br><br>
+        
+        <label for="critics_points">Critics Points:</label>
+        <input type="number" id="critics_points" name="critics_points" step="0.01" max="2"><br><br>
+        
+        <label for="user_points">User Points:</label>
+        <input type="number" id="user_points" name="user_points"step="0.01" max="2"><br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+
+    <h2>
+        The prediction is {{results}} Millions
+    </h2>
+</body>
+</html>
