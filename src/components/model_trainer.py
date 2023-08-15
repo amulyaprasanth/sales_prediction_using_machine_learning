@@ -40,8 +40,8 @@ class ModelTrainer:
             X_test, y_test = test_arr[:, :-1], test_arr[:, -1]
 
             models = {
-                "Random Forest": RandomForestRegressor(),
                 "Decision Tree": DecisionTreeRegressor(),
+                "Random Forest": RandomForestRegressor(),
                 "Gradient Boosting": GradientBoostingRegressor(),
                 "Linear Regression": LinearRegression(),
                 "XGBRegressor": XGBRegressor(),
@@ -88,7 +88,7 @@ class ModelTrainer:
 
             logging.info("Training models....")
             model_report = evaluate_models(X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test,
-                                                              models=models, params=params)
+                                           models=models, params=params)
 
             # get the best model
             logging.info("Getting the best model")
