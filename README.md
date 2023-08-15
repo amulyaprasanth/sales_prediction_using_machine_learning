@@ -9,3 +9,6 @@
      ` conda activate venv/ `
 4. Install the requirements using pip\
    `pip install -r requirements.txt`
+
+5. Then run\
+   `python app.py`
