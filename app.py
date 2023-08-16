@@ -35,5 +35,18 @@ def predict_datapoint():
         return render_template('home.html', results=round(results[0], 2))
 
 
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    if request.method == 'POST':
+        repo = git.Repo('./myproject')
+        origin = repo.remotes.origin
+        repo.create_head('master',
+                         origin.refs.master).set_tracking_branch(origin.refs.master).checkout()
+        origin.pull()
+        return '', 200
+    else:
+        return '', 400
+
+
 if __name__ == "__main__":
     app.run("0.0.0.0")
