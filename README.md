@@ -1,6 +1,13 @@
 # Sales Price Prediction Project
 
-### Steps to set up the environment for the code to run
+## Steps to set up the environment for the code to run
+
+Prerequisites:
+You need to have anaconda or miniconda installed on your system
+* For installing miniconda, visit: https://docs.conda.io/en/main/miniconda.html
+* For installing anaconda, visit: https://www.anaconda.com/download
+
+### Steps to run the code
 1. open a command prompt in the root directory.
 2. Create a virtual environment by using conda you can also try using venv
 
