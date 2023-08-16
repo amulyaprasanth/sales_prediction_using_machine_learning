@@ -3,17 +3,9 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
-    black url('https://images.unsplash.com/photo-1604846887565-640d2f52d564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80') no-repeat;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
-    rgba(220, 220, 220, 1) url('https://images.unsplash.com/photo-1604846887565-640d2f52d564?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80') no-repeat;
-  background-blend-mode: exclusion;
-  background-blend-mode: luminosity;
-  background-size: 100%;
+  background-image: url('https://img.freepik.com/free-photo/empty-dark-room-modern-futuristic-sci-fi-background-3d-illustration_35913-2340.jpg?w=1480&t=st=1692180667~exp=1692181267~hmac=6cb52d1acdf3e83beb2241c720dd5fbe6441c4f18479af1819668bb5bb6808fd');
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
 }
