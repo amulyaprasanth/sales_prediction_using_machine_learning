@@ -6,4 +6,5 @@ seaborn
 xgboost
 flask
 catboost
+gunicorn
 -e .
