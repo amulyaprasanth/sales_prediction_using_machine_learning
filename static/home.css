@@ -1,0 +1,73 @@
+/* Reset default margin and padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply an animated background and some spacing */
+body {
+    opacity: 0.8;
+    background-image: url('https://techstory.in/wp-content/uploads/2021/04/How-digital-tech-has-revolutionized-the-gaming-industry-xbox-controller-mouse-gaming-keyboard.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+/* Center the form */
+.center {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(231, 9, 9, 0.019);
+}
+
+/* Style form elements */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form select,
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style submit and reset buttons */
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #249b5c88;
+}
+
+h1{
+    text-align:center;
+}
+
+@media screen and (max-width: 768px) {
+    .center {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
